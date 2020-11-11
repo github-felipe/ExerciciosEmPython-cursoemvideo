@@ -4,5 +4,4 @@ a2 = str(input('Digite o nome do segundo aluno: '))
 a3 = str(input('Digite o nome do terceiro aluno: '))
 a4 = str(input('Digite o nome do quarto aluno: '))
 lista = [a1, a2, a3, a4]
-sorteado = choice(lista)
-print(f'O aluno(a) que deve apagar o quadro é: {sorteado}')
+print(f'O aluno(a) que deve apagar o quadro é: {choice(lista)}')

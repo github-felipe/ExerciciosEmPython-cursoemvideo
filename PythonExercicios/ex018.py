@@ -1,3 +1,4 @@
-from math import sin, cos, tan
+from math import sin, cos, tan, radians
 n = int(input('Digite um ângulo: '))
-print(f'Ângulo: {n:.3f}, Seno: {sin(n):.3f}, Cosseno: {cos(n):.3f}, Tangente: {tan(n):.3f}')
+radians(n)
+print(f'Ângulo: {n:}, Seno: {sin(radians(n)):.2f}, Cosseno: {cos(radians(n)):.2f}, Tangente: {tan(radians(n)):.2f}')
