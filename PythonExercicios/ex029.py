@@ -1,4 +1,4 @@
-velocidade = int(input('Digite a velocidade do seu carro: '))
+velocidade = int(input('Digite a velocidade atual do carro: '))
 if velocidade > 80:
     multa = (velocidade - 80) * 7
     if velocidade > 159:
