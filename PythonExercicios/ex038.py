@@ -3,8 +3,8 @@ n = n.split()
 n1 = int(n[0])
 n2 = int(n[1])
 if n1 > n2:
-    print(f'O maior número é {n1} e o menor número é {n2}')
+    print('O PRIMEIRO número é maior')
 elif n2 > n1:
-    print(f'O maior número é {n2} e o menor número é {n1}')
+    print('O SEGUNDO número é maior')
 else:
     print('Não existe número maior, os dois são iguais!')
