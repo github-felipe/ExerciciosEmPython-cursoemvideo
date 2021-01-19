@@ -10,3 +10,4 @@ for c in range(10, -1, -1):
     sleep(1)
 pygame.mixer.music.play(loops=0, start=0)
 print(emojize('COMEÇOU!!! :fireworks: :fireworks: :fireworks: :fireworks:', use_aliases=True))
+sleep(5)
