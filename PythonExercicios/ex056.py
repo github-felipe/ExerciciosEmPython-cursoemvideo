@@ -17,6 +17,7 @@ for c in range(0, 4):
     if gen == 'M':
         if idade > velho:
             maisvelho = nome
+            velho = idade
     if gen == 'F':
         if idade < 20:
             quantidade = quantidade + 1
@@ -26,7 +27,7 @@ print('')
 print('')
 media = media / 4
 print(f'A média de idade das pessoas inscritas neste terminal é de: {media}')
-print(f'O nome do homem mais velho inscrito neste terminel é: {maisvelho}')
+print(f'O nome do homem mais velho inscrito neste terminal tem {velho} anos e se chama: {maisvelho}')
 if quantidade == 1:
     print('Apenas uma mulher com menos de 20 anos foi inscrita neste terminal')
 else:
