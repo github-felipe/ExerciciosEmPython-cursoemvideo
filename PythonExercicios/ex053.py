@@ -11,3 +11,4 @@ if frase3 == frase2:
     print(f'"{frase1}" é um palíndromo!')
 else:
     print(f'{frase1} não é um palíndromo!')
+#também poderia ser feito assim: frase3 = frase2[::-1]
