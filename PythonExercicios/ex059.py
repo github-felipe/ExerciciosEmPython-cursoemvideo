@@ -1,8 +1,8 @@
 from time import sleep
 option = 0
+n1 = float(input('\033[33mDigite um valor:\033[m '))
+n2 = float(input('\033[33mDigite outro valor:\033[m '))
 while option != 5:
-    n1 = float(input('\033[33mDigite um valor:\033[m '))
-    n2 = float(input('\033[33mDigite outro valor:\033[m '))
     print('''\033[36m[1]\033[m somar
 \033[36m[2]\033[m multiplicar
 \033[36m[3]\033[m maior
@@ -22,4 +22,10 @@ while option != 5:
             maior = n2
         print(f'O maior desses dois números é: {maior}')
         sleep(3)
+    if option == 4:
+        n1 = float(input('\033[33mDigite um valor:\033[m '))
+        n2 = float(input('\033[33mDigite outro valor:\033[m '))
+    if option > 5 or option < 1:
+        print('Opção inválida, tente novamente')
+        sleep(2)
 print('Obrigado por utilizar nosso programa!')
