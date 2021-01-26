@@ -7,4 +7,4 @@ while n != 999:
     if n != 999:
         total += n
         contador += 1
-print(f'Você digitou um total de {contador} digitos e a soma de todos eles é: {total}')
+print(f'Você digitou um total de {contador} números e a soma de todos eles é: {total}')
