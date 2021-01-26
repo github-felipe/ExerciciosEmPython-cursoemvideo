@@ -9,7 +9,7 @@ if n >= 0:
         else:
             print(f'\033[36m{n2}\033[m->', end='')
             n3 = n2
-            n2 = n1 + n2
+            n2 += n1
             n1 = n3
         contador += 1
 else:
@@ -22,7 +22,7 @@ else:
         else:
             print(f'\033[36m{n2}\033[m->', end='')
             n3 = n2
-            n2 = n1 + n2
+            n2 += n1
             n1 = n3
-        contador -=1
+        contador -= 1
 print('Fim')
