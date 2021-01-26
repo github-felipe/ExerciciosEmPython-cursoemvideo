@@ -3,8 +3,10 @@ n2 = int(input('Digite a razão de uma PA: '))
 contador = 0
 quantidade = 10
 while contador < quantidade:
-    print(f'{n1 + contador * n2}', end=', ')
+    print(f'{n1 + contador * n2}', end=' ➡ ')
     contador +=1
     if contador == quantidade:
+        print('PAUSA')
         quantidade += int(input('Você deseja ver mais quantos termos dessa progressão aritmética? '))
 print('Fim')
+print(f'Ao todo foram mostrados {quantidade} termos dessa PA')
