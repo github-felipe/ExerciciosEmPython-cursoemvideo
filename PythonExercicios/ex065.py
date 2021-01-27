@@ -12,6 +12,9 @@ while continuar == 'S':
         if valor < menor:
             menor = valor
     continuar = str(input('Deseja continuar? [S/N]: ')).upper().strip()
+    if continuar not in 'SN':
+        while continuar not in 'SN':
+            continuar = str(input('Valor inválido, digite novamente. Deseja continuar? [S/N]: ')).strip().upper()
     total += valor
     contador += 1
 print(f'A média dos valores digitados é: {total / contador}')
