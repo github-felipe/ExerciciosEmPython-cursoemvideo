@@ -3,10 +3,10 @@ print('=' * 40)
 print(f'{"LISTAGEM DE PREÇOS":^40}')
 print('=' * 40)
 print(f'Nome{"Valor":>36}')
-for c in range(0, 12):
+for c in range(0, len(listagem)):
     if (c / 2).is_integer():
-        print(f'{listagem[c]:.<20}', end='')
+        print(f'{listagem[c]:.<31}', end='')
         tamanho = len(listagem[c])
     else:
-        print(f'{"R$":.>13}{float(listagem[c]):>7.2f}')
+        print(f'R${float(listagem[c]):>7.2f}')
 print('=' * 40)
