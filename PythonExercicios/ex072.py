@@ -2,7 +2,7 @@ num = ('zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito',
        'catorze', 'quinze', 'desesseis', 'desessete', 'dezoito', 'dezenove', 'vinte')
 escolha = int(input('Digite um número entre 0 e 20: '))
 while True:
-    if -1 < escolha < 21:
+    if 0 <= escolha <= 20:
         break
     else:
         escolha = int(input('Tente novamente... Escolha um número entre [0-20]: '))
