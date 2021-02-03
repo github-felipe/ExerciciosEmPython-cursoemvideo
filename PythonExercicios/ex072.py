@@ -1,4 +1,5 @@
-num = ('zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez', 'onze', 'doze', 'treze', 'quatorze', 'quinze', 'desesseis', 'desessete', 'dezoito', 'dezenove', 'vinte')
+num = ('zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez', 'onze', 'doze', 'treze',
+       'catorze', 'quinze', 'desesseis', 'desessete', 'dezoito', 'dezenove', 'vinte')
 escolha = int(input('Digite um número entre 0 e 20: '))
 while True:
     if -1 < escolha < 21:
