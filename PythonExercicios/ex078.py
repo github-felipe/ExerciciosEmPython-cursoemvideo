@@ -6,7 +6,8 @@ max = max(lista)
 quantmax = lista.count(max)
 min = min(lista)
 quantmin = lista.count(min)
-if lista.count(max) > 1:
+print(f'Os valores digitados foram: {lista}')
+if quantmax > 1:
     print(f'O maior valor digitado foi: {max} e ele apareceu nas posições: ', end='')
 else:
     print(f'O maior valor digitado foi: {max} e ele apareceu na posição: ', end='')
@@ -19,7 +20,7 @@ for n in range(0, quantmax):
     else:
         print(lista.index(max, lastMax), end=', ')
         lastMax = lista.index(max, lastMax) + 1
-if lista.count(min) > 1:
+if quantmin > 1:
     print(f'O menor valor digitado foi: {min} e ele apareceu nas posições: ', end='')
 else:
     print(f'O menor valor digitado foi: {min} e ele apareceu na posição: ', end='')
