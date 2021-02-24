@@ -1,10 +1,8 @@
 lista = list()
-contador = 0
 for c in range(0, 5):
-    contador += 1
     inserido = -1
     n = int(input('Digite um número: '))
-    if contador == 1:
+    if c == 0:
         inserido = 0
         lista.append(n)
     else:
