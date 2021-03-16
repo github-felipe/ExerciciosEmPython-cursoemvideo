@@ -13,7 +13,7 @@ for c in range(1, quant+1):
         valor = choice(valores)
         jogo.append(valor)
         valores.remove(valor)
-    jogo = sorted(jogo)
+    jogo.sort()
     print(f'Jogo {c}: {jogo}')
     sleep(1)
     jogo.clear()
