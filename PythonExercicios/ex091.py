@@ -26,3 +26,6 @@ for num in ordenados:
     sleep(1)
 
 print('Obrigado por usar o nosso programa, volte sempre!')
+#Também poderia ter feito assim:
+#from operator import itemgetter
+#ordenados = sorted(jogadores.items, key=itemgetter(1), reverse=True)
