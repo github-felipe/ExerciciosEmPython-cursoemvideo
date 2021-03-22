@@ -5,7 +5,7 @@ user = {'nome': str(input('Nome: ')), 'idade': actYear - int(input('Ano de nasci
 if int(user['ctps']) > 0:
     user['ano de contratação'] = int(input('Ano de contratação: '))
     user['salário'] = float(input('Salário: '))
-    user['aposentadoria'] = (user['idade'] + actYear) - user['ano de contratação'] + 35
+    user['aposentadoria'] = user['ano de contratação'] - (actYear - user['idade']) + 35
     ctps = True
 print(f'Nome: {user["nome"]}')
 print(f'Idade: {user["idade"]}')
