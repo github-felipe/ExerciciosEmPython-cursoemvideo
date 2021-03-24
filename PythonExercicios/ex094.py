@@ -21,7 +21,12 @@ while True:
         fUsuaria = {'nome': nom, 'genero': gen, 'idade': idade}
         cadastros.append(fUsuaria.copy())
         fUsuaria.clear()
-    continuar = str(input('Deseja continuar? [S/N]')).upper()
+    while True:
+        continuar = str(input('Deseja continuar? [S/N]')).upper()
+        if len(continuar) == 1:
+            if continuar in 'SN':
+                break
+        print('Valor inválido, tente novamente...')
     if continuar == 'N':
         break
 
