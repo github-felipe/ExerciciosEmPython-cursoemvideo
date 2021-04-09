@@ -11,7 +11,7 @@ while True:
     print('\33[30;42m', end='')
     msg('Sistema de ajuda PyHELP')
     user = str(input('\033[mFunção ou Biblioteca \033[32m>>>\033[m '))
-    if user == 'fim':
+    if user.lower() == 'fim':
         break
     print('\033[30;44m', end='')
     msg(f'Acessando o menu do comando {user}')
